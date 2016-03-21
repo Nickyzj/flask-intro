@@ -76,3 +76,4 @@ target/
 # add by nicky
 .idea/
 venv/
+bootstrap-3.3.6-dist/
