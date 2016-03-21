@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash, g
 from flask.ext.sqlalchemy import SQLAlchemy
 from functools import wraps
-# import sqlite3
+import sqlite3
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 # app.database = 'sample.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///post1s.db'
 # UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
@@ -29,7 +29,12 @@ def login_required(f):
 @app.route('/')
 @login_required
 def home():
-    posts = db.session.query(BlogPost).all()
+    posts = []
+    try:
+        posts = db.session.query(BlogPost).all()
+    except:
+        flash("You have no database!")
+
     return render_template('index.html', posts = posts)
 
 @app.route('/welcome')
