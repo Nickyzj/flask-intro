@@ -6,7 +6,7 @@ import sqlite3
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 # app.database = 'sample.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///post1s.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 # UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
