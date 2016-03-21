@@ -1,0 +1,222 @@
+    1  sudo apt-get update
+    2  sudo -i
+    3  sudo adduser dodo sudo
+    4  sudo -i
+    5  su -i
+    6  exit
+    7  sudo apt-get update
+    8  cd ~
+    9  pwd
+   10  python
+   11  python3
+   12  sudo apt-get install libssl-dev openssl
+   13  sudo apt-get install sqlite3 libsqlite3-dev
+   14  cd /opt
+   15  sudo wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+   16  tar zxvf Python-3.5.1.tgz
+   17  sudo tar zxvf Python-3.5.1.tgz
+   18  ll
+   19  cd Python-3.5.1/
+   20  sudo ./configure
+   21  sudo apt-get install build-essential
+   22  ./configure
+   23  sudo ./configure
+   24  sudo make
+   25  sudo make install
+   26  cd ..
+   27  python
+   28  python3
+   29  python35
+   30  cd p
+   31  ll
+   32  cd Python-3.5.1/
+   33  ll
+   34  python
+   35  python3.5
+   36  python3.4
+   37  cd ~
+   38  ll
+   39  mkdir codes
+   40  cd codes
+   41  mkdir python
+   42  cd python
+   43  mkdir flask
+   44  cd flask/
+   45  mkdir microblog
+   46  cd microblog/
+   47  git init
+   48  sudo apt-get install git
+   49  git init
+   50  git remote add origin https://github.com/Nickyzj/microblog.git
+   51  git pull origin master
+   52  ll
+   53  python3.5 -m venv flask
+   54  ll
+   55  ll flask/bin
+   56  flask/bin/pip install -r requirements.txt
+   57  pip install --upgrade pip
+   58  flask/bin/pip install --upgrade pip
+   59  ll
+   60  ./db_create.py
+   61  ll
+   62  ./run.py
+   63  ll
+   64  cd codes/python/flask/microblog/
+   65  ./run.py
+   66  cd codes/python/flask/microblog/
+   67  ll
+   68  ./run.py
+   69  netstat -ntlp
+   70  ps -ef
+   71  ps -ef | grep dodo
+   72  man ill
+   73  man kill
+   74  netstat -ntlp
+   75  kill -9 8740
+   76  netstat -ntlp
+   77  kill -9 8742
+   78  netstat -ntlp
+   79  ll
+   80  ./run.py
+   81  cd codes/python/flask/microblog/
+   82  ll
+   83  git status
+   84  git pull origin master
+   85  ll
+   86  ./run.py
+   87  ll
+   88  ./db_migrate.py
+   89  ./run.py
+   90  cd codes/python/flask/microblog/
+   91  ./run
+   92  ./run.py
+   93  pwd
+   94  ls
+   95  cd codes/python/flask/microblog/
+   96  git stauts
+   97  git status
+   98  git pull origin master
+   99  ls
+  100  ll
+  101  ./run.py
+  102  ll
+  103  ./db_migrate.py
+  104  ./run.py
+  105  ll
+  106  sqlite3 app.db
+  107  git pull origin master
+  108  pwd
+  109  ll
+  110  cd codes/
+  111  ls
+  112  cd python/flask/microblog/
+  113  ls
+  114  git status
+  115  git pull origin master
+  116  ll
+  117  ls flask/
+  118  cd flask/
+  119  ls
+  120  cd bin/
+  121  ls
+  122  ./activate
+  123  ll
+  124  venv activate
+  125  cd ..
+  126  ls
+  127  ll
+  128  flask/bin/activate
+  129  source flask/bin/activate
+  130  flask/bin/pip install flask-mail
+  131  pip install --upgrade pip
+  132  cd codes/python/flask/microblog/
+  133  source flask/bin/activate
+  134  ll
+  135  python send_mail_text.py
+  136  ll
+  137  vi config.py
+  138  python send_mail_text.py
+  139  vi config.py
+  140  python send_mail_text.py
+  141  vi config.py
+  142  python send_mail_text.py
+  143  vi config.py
+  144  python send_mail_text.py
+  145  git status
+  146  git add config.py
+  147  git commit -m "flask mail gmail"
+  148  git config --global user.email "reg.zj@outlook.com"
+  149  git config --global user.name "nickyzj"
+  150  git status
+  151  git commit -m "flask mail gmail"
+  152  git push -u origin master
+  153  python send_mail_text.py
+  154  git status
+  155  git pull origin master
+  156  ll
+  157  python run.py
+  158  git pull origin master
+  159  python run.py
+  160  cd codes/python/flask/
+  161  cd flask-intro/
+  162  source venv/bin/activate
+  163  python app.py
+  164  pip install Flask-SQLAlchemy
+  165  python app.py
+  166  python db_create.py
+  167  python app.py
+  168  pip list
+  169  sudo apt-get update
+  170  sudo apt-get install postgresql postgresql-contrib
+  171  sudo -i -u postgres
+  172  wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  173  heroku
+  174  heroku login
+  175  pip install gunicorn
+  176  gunicorn -b 1stloop.com:4000 app:app
+  177  touch Procfile
+  178  vi Procfile
+  179  foreman check
+  180  apt-get install ruby-foreman
+  181  sudo apt-get install ruby-foreman
+  182  foreman check
+  183  foreman start
+  184  pip freeze
+  185  pip freeze > requirements2.txt
+  186  git status
+  187  git add Procfile
+  188  git add requirements2.txt
+  189  git status
+  190  git commit -m "gunicorn"
+  191  git push -u origin master
+  192  git status
+  193  git pull origin mmaster
+  194  git pull origin master
+  195  git status
+  196  git pull origin master
+  197  git status
+  198  heroku create flask-intro
+  199  heroku create flask-intro-nicky
+  200  git push heroku master
+  201  git status
+  202  ll
+  203  mv requirements.txt requirements_backup.txt
+  204  mv requirements2.txt requirements.txt
+  205  ll
+  206  git status
+  207  git add requirements.txt
+  208  git status
+  209  git add requirements_backup.txt
+  210  git status
+  211  git commit -m "update requriements.txt"
+  212  git push -u origin master
+  213  git push heroku master
+  214  heroku ps:scale web=1
+  215  heroku ps
+  216  git status
+  217  git pull origin master
+  218  git status
+  219  git push heroku master
+  220  heroku run python test.py -v
+  221  history
+
