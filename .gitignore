@@ -73,3 +73,7 @@ target/
 
 # pyenv
 .python-version
+
+# add by nicky
+.idea/
+venv/
