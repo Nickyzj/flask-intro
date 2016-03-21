@@ -59,8 +59,7 @@ flask/
 tmp/
 
 # Database file
-app.db
-test.db
+*.db
 
 # Sphinx documentation
 docs/_build/
