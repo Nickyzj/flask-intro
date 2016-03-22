@@ -77,3 +77,4 @@ target/
 .idea/
 venv/
 bootstrap-3.3.6-dist/
+.DS_Store
