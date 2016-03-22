@@ -128,3 +128,4 @@ git remote add heroku https://git.heroku.com/flask-intro-nicky.git
 heroku config:set DISABLE_COLLECTSTATIC=1
 
 heroku run python manage.py db upgrade
+
