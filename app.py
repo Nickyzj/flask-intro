@@ -8,9 +8,7 @@ app = Flask(__name__)
 app.secret_key = '\xa8\xe5\xff{\x04\xed@\xf8^&\xee\xdf\xf7N,[\xc3^\xec^\xd6(7\x87'
 
 import os
-# $env:APP_SETTINGS='config.DevelopmentConfig'
-# export APP_SETTINGS='config.ProductionConfig'
-# echo $APP_SETTINGS
+
 app.config.from_object(os.environ['APP_SETTINGS'])
 
 # UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
