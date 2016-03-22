@@ -89,3 +89,7 @@ export APP_SETTINGS='config.ProductionConfig'
 echo $APP_SETTINGS
 $env:DATABASE_URL="postgresql://postgres:123123@localhost/discover_flask_dev"
 autoenv
+PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
+/etc/paths
+
+create database discover_flask_dev;
