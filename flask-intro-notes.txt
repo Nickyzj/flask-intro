@@ -220,3 +220,4 @@
   220  heroku run python test.py -v
   221  history
 
+heroku addons:create heroku-postgresql:hobby-dev
