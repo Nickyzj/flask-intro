@@ -93,3 +93,33 @@ PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
 /etc/paths
 
 create database discover_flask_dev;
+
+~/.bash_profile
+source ~/.bash_profile
+
+python manage.py db init
+
+python manage.py db migrate
+
+python manage.py db upgrade
+
+psql
+
+\c discover_flask_dev
+
+\d
+
+\d posts
+
+select * from posts;
+
+insert into users values(1, 'admin', 'admin@admin.com', 'admin');
+
+select * from users;
+
+update posts set author_id = 1;
+
+select * from posts;
+
+python manage.py runserver
+
