@@ -4,7 +4,8 @@ from functools import wraps
 import sqlite3
 
 app = Flask(__name__)
-app.secret_key = 'super secret key'
+# os.urandom(24)
+app.secret_key = '\xa8\xe5\xff{\x04\xed@\xf8^&\xee\xdf\xf7N,[\xc3^\xec^\xd6(7\x87'
 
 import os
 # $env:APP_SETTINGS='config.DevelopmentConfig'
