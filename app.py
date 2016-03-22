@@ -12,6 +12,7 @@ import os
 # export APP_SETTINGS='config.ProductionConfig'
 # echo $APP_SETTINGS
 app.config.from_object(os.environ['APP_SETTINGS'])
+print os.environ['APP_SETTINGS']
 
 # UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
