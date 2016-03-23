@@ -129,3 +129,10 @@ heroku config:set DISABLE_COLLECTSTATIC=1
 
 heroku run python manage.py db upgrade
 
+python manage.py db --help
+
+python manage.py db downgrade -1 # downgrade one version
+
+python manage.py db history # show history & id $ revision numbers
+
+
