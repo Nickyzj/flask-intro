@@ -135,4 +135,27 @@ python manage.py db downgrade -1 # downgrade one version
 
 python manage.py db history # show history & id $ revision numbers
 
+pip install virtualenvwrapper
+pip install virtualenvwrapper-powershell
+
+rm -r venv
+
+mkvirtualenv discover-flask
+
+deactivate
+
+workon discover-flask
+
+http://www.tylerbutler.com/2012/05/how-to-install-python-pip-and-virtualenv-on-windows-with-powershell/
+$env:workon_home='d:\codes\python\flask\sandbox\virtualenv_home'
+
+Import-Module virtualenvwrapper
+
+Get-Command *virtualenv*
+
+New-VirtualEnvironment engineer
+
+workon # display all env
+
+Get-ChildItem env:
 
