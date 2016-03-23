@@ -159,3 +159,14 @@ workon # display all env
 
 Get-ChildItem env:
 
+sudo find / -name <filename>
+
+/Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+
+nano ~/.bash_profile
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+http://stackoverflow.com/questions/12232421/virtualenvwrapper-commands-arent-working
+

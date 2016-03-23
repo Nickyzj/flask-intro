@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash, g
 from flask.ext.sqlalchemy import SQLAlchemy
 from functools import wraps
-import sqlite3
+from flask.ext.bcrypt import Bcrypt
 
 app = Flask(__name__)
+bcrypt = Bcrypt(app)
+
 # os.urandom(24)
 app.secret_key = '\xa8\xe5\xff{\x04\xed@\xf8^&\xee\xdf\xf7N,[\xc3^\xec^\xd6(7\x87'
 
