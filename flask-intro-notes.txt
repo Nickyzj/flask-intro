@@ -177,3 +177,9 @@ http://stackoverflow.com/questions/12232421/virtualenvwrapper-commands-arent-wor
 
 http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
 
+postgresql:/// connects over a UDP socket and can use the Unix userid to authenticate.
+
+postgresql://host:port/ connects over TCP, where the userid of the remote end is not known (or cannot be trusted).
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
+
