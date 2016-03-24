@@ -85,7 +85,10 @@ git push heroku master
 heroku run python db_create.py
 heroku run python
 $env:APP_SETTINGS='config.DevelopmentConfig'
+
 export APP_SETTINGS='config.ProductionConfig'
+export DATABASE_URL='postgresql://localhost/discover_flask_dev'
+
 echo $APP_SETTINGS
 $env:DATABASE_URL="postgresql://postgres:123123@localhost/discover_flask_dev"
 autoenv
@@ -171,4 +174,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 http://stackoverflow.com/questions/12232421/virtualenvwrapper-commands-arent-working
+
+http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist
 
