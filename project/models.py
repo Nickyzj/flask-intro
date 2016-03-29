@@ -19,7 +19,7 @@ class BlogPost(db.Model):
         self.author_id = author_id
 
     def __repr__(self):
-        return '<title {fla}>'.format(self.title)
+        return '<title {}>'.format(self.title)
 
 class User(db.Model):
 
@@ -49,4 +49,4 @@ class User(db.Model):
         return unicode(self.id)
 
     def __repr__(self):
-        return '<name {}>'.format(self.name)
+        return '<name - {}>'.format(self.name)
