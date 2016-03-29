@@ -2,11 +2,11 @@
 #### imports ####
 #################
 
-from flask import flash, redirect, render_template, request, url_for, Blueprint
-from flask.ext.login import login_user, login_required, logout_user
-from forms import LoginForm, RegisterForm
-from project.models import User, bcrypt
-from project import db
+from flask import flash, redirect, render_template, request, url_for, Blueprint # pragma: no cover
+from flask.ext.login import login_user, login_required, logout_user # pragma: no cover
+from forms import LoginForm, RegisterForm # pragma: no cover
+from project.models import User, bcrypt # pragma: no cover
+from project import db # pragma: no cover
 
 ################
 #### config ####

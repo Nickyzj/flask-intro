@@ -17,7 +17,10 @@ bcrypt = Bcrypt(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 app.config.from_object(os.environ['APP_SETTINGS'])
+# eliminate warning message SQLALCHEMY_TRACK_MODIFICATIONS
+track_modifications = app.config.setdefault('SQLALCHEMY_TRACK_MODIFICATIONS', True)
 db = SQLAlchemy(app)
+
 
 from project.users.views import users_blueprint
 from project.home.views import home_blueprint
